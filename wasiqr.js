@@ -60,28 +60,28 @@ router.get('/', async (req, res) => {
 	
 				   let WASI_MD_TEXT = `
 ┏━━━━━━━━━━━━━━
-┃𝐵𝑢𝑔𝑎𝑡𝑡𝑖
-┃𝑆𝑢𝑐𝑐𝑒𝑠𝑓𝑢𝑙𝑙𝑦
-┃𝐶𝑜𝑛𝑛𝑒𝑐𝑡𝑒𝑑
+┃𝚓𝚊𝚖𝚎𝚜 𝚍𝚖
+┃𝚜𝚞𝚌𝚌𝚎𝚜𝚏𝚞𝚕𝚕
+┃𝚌𝚘𝚗𝚎𝚌𝚝𝚎𝚍
 ┗━━━━━━━━━━━━━━━
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || 𝐶𝑟𝑒𝑎𝑡𝑜𝑟 = 𝑀𝑎𝑟𝑖𝑠𝑒𝑙
+❶ || 𝚌𝚛𝚎𝚊𝚝𝚘𝚛 = 𝚓𝚊𝚖𝚎𝚜
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || WhattsApp Channel = https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x
+❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VaogSY74IBhJWe8b472H
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 Please Follow My Support Channel
-Wanna talk to me?https://wa.me/254740007567?
+Wanna talk to me?https://wa.me/+254781351479?
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©*𝑀𝑎𝑟𝑖𝑠𝑒𝑙 𝐴 𝑃𝑟𝑜 𝐷𝑒𝑣𝑒𝑙𝑜𝑝𝑒𝑟*
+©*𝙳𝙴𝚅 𝙹𝙰𝙼𝙴𝚂 𝙿𝚁𝙾𝙵𝙵𝙴𝚂𝙸𝙾𝙽𝙰𝙻𝙸𝚂𝚃*
 _____________________________________
 	
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id,{text:WASI_MD_TEXT},{quoted:session})
+	 await Qr_Code_By_james_Tech.sendMessage(Qr_Code_By_james_Tech.user.id,{text:JAMES_MD_TEXT},{quoted:session})
 
 
 
 					await delay(100);
-					await Qr_Code_By_Wasi_Tech.ws.close();
+					await Qr_Code_By_James_Tech.ws.close();
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
@@ -98,6 +98,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await WASI_MD_QR_CODE()
+	return await JAMES_MD_QR_CODE()
 });
 module.exports = router
